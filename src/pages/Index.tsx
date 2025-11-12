@@ -236,7 +236,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-square rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="https://cdn.poehali.dev/projects/9746c087-7548-40c0-9358-2dcdf24d64b9/files/a64be19c-e0f2-43aa-9190-33ac624aba7d.jpg"
+                src="https://cdn.poehali.dev/files/cbe787d2-70ff-4fb5-add3-6cf696839976.jpeg"
                 alt="О визажисте"
                 className="w-full h-full object-cover"
               />
