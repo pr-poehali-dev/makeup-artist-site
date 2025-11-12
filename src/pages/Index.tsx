@@ -37,14 +37,7 @@ const Index = () => {
     }
   };
 
-  const portfolioItems = [
-    { id: 1, category: 'Вечерний макияж', image: 'https://cdn.poehali.dev/projects/9746c087-7548-40c0-9358-2dcdf24d64b9/files/d4659a16-55d4-42bc-895a-9ae915810497.jpg' },
-    { id: 2, category: 'Свадебный макияж', image: 'https://cdn.poehali.dev/projects/9746c087-7548-40c0-9358-2dcdf24d64b9/files/1c0f150a-7ef2-4716-add4-55449e5ce55d.jpg' },
-    { id: 3, category: 'Дневной макияж', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80' },
-    { id: 4, category: 'Фотосессия', image: 'https://images.unsplash.com/photo-1560869713-bf165a0ace74?w=800&q=80' },
-    { id: 5, category: 'Креативный макияж', image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80' },
-    { id: 6, category: 'Образ для мероприятия', image: 'https://cdn.poehali.dev/projects/9746c087-7548-40c0-9358-2dcdf24d64b9/files/a64be19c-e0f2-43aa-9190-33ac624aba7d.jpg' },
-  ];
+  const portfolioItems: { id: number; category: string; image?: string }[] = [];
 
   const services = [
     {
@@ -136,12 +129,11 @@ const Index = () => {
               </div>
             </div>
             <div className="relative animate-scale-in">
-              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/projects/9746c087-7548-40c0-9358-2dcdf24d64b9/files/d4659a16-55d4-42bc-895a-9ae915810497.jpg" 
-                  alt="Профессиональный макияж"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl bg-secondary flex items-center justify-center">
+                <div className="text-center text-muted-foreground">
+                  <Icon name="Image" size={48} className="mx-auto mb-2" />
+                  <p>Добавьте фото</p>
+                </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-xl">
                 <div className="text-4xl font-serif font-bold">10+</div>
@@ -234,12 +226,11 @@ const Index = () => {
       <section id="about" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-square rounded-lg overflow-hidden shadow-2xl">
-              <img 
-                src="https://cdn.poehali.dev/files/cbe787d2-70ff-4fb5-add3-6cf696839976.jpeg"
-                alt="О визажисте"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-square rounded-lg overflow-hidden shadow-2xl bg-secondary flex items-center justify-center">
+              <div className="text-center text-muted-foreground">
+                <Icon name="Image" size={48} className="mx-auto mb-2" />
+                <p>Добавьте фото</p>
+              </div>
             </div>
             
             <div>
